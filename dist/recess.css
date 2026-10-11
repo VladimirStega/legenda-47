@@ -1,0 +1,104 @@
+/* The first screen is a school-break game on a chalkboard. */
+.recess-board{height:720px}
+.recess-board .poster-lines{opacity:.28}
+.recess-board .giant47{top:211px;left:24%;font-size:340px;letter-spacing:-.12em;transform:rotate(-7deg);z-index:2;text-shadow:none}
+
+
+
+.recess-board .note-left{left:6%;top:235px;font-size:29px;line-height:1.05}
+.break-label{position:absolute;left:26%;top:188px;color:#dae6cfb3;font-size:9px;letter-spacing:.19em;transform:rotate(-7deg)}
+.play-route{position:absolute;inset:0;width:100%;height:100%;overflow:visible;z-index:1;pointer-events:none}
+.route-guide{fill:none;stroke:#eee6b2;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 11;opacity:.44}
+.route-trail{fill:none;stroke:#fff9d8;stroke-width:4;stroke-linecap:round;opacity:0}
+.route-dust{fill:#fff9d8;opacity:0}
+.chalk-goal{position:absolute;right:4%;top:44%;width:163px;height:172px;z-index:3;transform:rotate(-4deg);color:#f3efd4}
+.goal-drawing{width:100%;height:100%;overflow:visible;transform-origin:90% 75%}
+.goal-frame{fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.goal-net{fill:none;stroke:currentColor;stroke-width:1.35;opacity:.42}
+.goal-target{position:absolute;left:51%;top:61%;width:1px;height:1px}
+.goal-note{position:absolute;left:23%;top:-5px;font:600 30px var(--hand);transform:rotate(7deg)}
+.goal-shout{position:absolute;right:4.7%;top:36%;font:700 57px var(--hand);color:#f3edac;transform:rotate(-12deg);z-index:6;opacity:0;pointer-events:none}
+.goal-score{position:absolute;top:194px;right:7%;display:flex;gap:12px;align-items:center;color:#e4e8d1;transform:rotate(5deg)}
+.goal-score>span{font:600 24px var(--hand);border-bottom:1px solid #d3dfc377}
+.goal-score>b{font:600 51px/1 var(--hand);font-variant-numeric:tabular-nums;min-width:50px;letter-spacing:3px}
+.recess-board .ball-zone{left:49%;bottom:55px;width:82px;height:120px}
+.recess-board .ball{width:82px;height:82px;will-change:transform;position:relative}
+.recess-board .ball:disabled{cursor:default;opacity:1}
+.recess-board .ball:active{scale:1}
+.recess-board .ball-hint{top:-35px;left:-18px;font-size:25px;transform:rotate(-6deg)}
+.recess-board .pass-count{width:156px;min-width:0;margin:12px 0 0 -37px;white-space:nowrap;font-size:10px}
+.recess-board .mouse-cue{left:108px;top:60px;width:106px;height:68px}
+.recess-board .support-photo{bottom:41px;left:4%;width:163px}
+.recess-board .support-photo img{height:99px}
+.recess-board .shoe-trail{left:25%;bottom:26px;opacity:.18;transform:rotate(-12deg) scale(.84)}
+.board-eraser{position:absolute;right:5%;bottom:49px;z-index:6;width:142px;min-height:74px;padding:0 8px;border:0;background:none;color:#eeeacb}
+.eraser-body{display:block;position:relative;width:88px;height:36px;margin:0 auto 10px;border-radius:5px 4px 3px 3px;transform:rotate(10deg);background:repeating-linear-gradient(2deg,#d1ae79 0 2px,#cfaa74 3px 5px,#dcb981 6px 7px);border:1px solid #d4b783;box-shadow:0 7px 0 #7d826f,0 10px 0 #a5ae97,3px 15px 6px #091d1755}
+.eraser-body b{font:700 21px var(--hand);color:#785f3c;position:absolute;left:32px;top:0;transform:rotate(-7deg)}
+.eraser-body::before{content:'';position:absolute;inset:5px;border:1px solid #a185534d;border-radius:3px}
+.board-eraser>span:last-child{display:block;font:500 20px var(--hand);transform:rotate(-3deg);white-space:nowrap}
+.board-eraser:hover .eraser-body{transform:rotate(3deg) translateY(-3px)}
+.board-eraser:focus-visible{outline-color:#f6ecc7}
+.recess-board .photo-disclaimer{font-size:8px;bottom:12px}
+@media(max-width:950px){
+.recess-board{height:700px}
+.recess-board .giant47{font-size:285px;left:23%;top:226px}
+.recess-board .note-left{font-size:26px;left:5%;top:228px}
+.break-label{top:192px;left:25%;font-size:8px}
+.chalk-goal{right:3%;top:46%;width:136px;height:145px}
+.goal-note{font-size:27px;top:-7px}
+.goal-score{right:6%;top:193px;gap:10px}.goal-score>b{font-size:44px}.goal-score>span{font-size:23px}
+.goal-shout{font-size:47px;right:4%;top:38%}
+.recess-board .ball-zone{left:48%;bottom:52px}
+.recess-board .support-photo{width:147px;bottom:44px}.recess-board .support-photo img{height:87px}
+.board-eraser{right:3.5%;bottom:54px;width:132px}
+}
+@media(max-width:650px){
+.recess-board{height:746px}
+.recess-board .poster-lines{left:-25%;top:117px;height:calc(100% - 145px);opacity:.2}
+.recess-board .poster-heading{top:57px}
+.recess-board .giant47{font-size:clamp(169px,52vw,300px);top:267px;left:16%;letter-spacing:-.14em}
+.recess-board .turn-note{top:154px;right:7%;width:95px;height:74px}
+.recess-board .turn-note>span{font-size:25px}
+.recess-board .note-left{top:171px;left:8%;font-size:25px}
+.break-label{top:250px;left:18%;font-size:7px;letter-spacing:.14em}
+.chalk-goal{top:447px;right:7%;width:106px;height:112px}
+.goal-note{font-size:22px;top:-10px}
+.goal-score{top:227px;right:8%;gap:8px;transform:rotate(4deg)}.goal-score>b{font-size:35px;min-width:38px}.goal-score>span{font-size:19px}
+.goal-shout{right:8%;top:401px;font-size:41px}
+.recess-board .ball-zone{left:33%;bottom:148px;width:64px;height:101px}
+.recess-board .ball{width:64px;height:64px}
+.recess-board .ball-hint{font-size:21px;top:-31px;left:-15px}
+.recess-board .pass-count{font-size:9px;width:130px;margin:11px 0 0 -33px}
+.recess-board .support-photo{left:8%;bottom:31px;width:113px;padding:7px 7px 4px}.recess-board .support-photo img{height:63px}.recess-board .support-photo span{font-size:16px}
+.recess-board .shoe-trail{left:47%;bottom:28px;transform:rotate(-30deg) scale(.65)}
+.board-eraser{right:5%;bottom:48px;width:127px}.eraser-body{width:76px;height:32px}.eraser-body b{left:27px;font-size:19px}.board-eraser>span:last-child{font-size:19px}
+.recess-board .photo-disclaimer{font-size:6px;left:8%;bottom:8px;right:auto}
+.route-guide{stroke-width:1.8;stroke-dasharray:4 9}.route-trail{stroke-width:3}
+}
+@media(prefers-reduced-motion:reduce){.eraser-body{transition:none}}
+
+/* Original solid numerals, before the paper and chalk treatments. */
+.recess-board .giant47 span{width:auto;height:auto;flex:none;background:none;filter:none;text-shadow:none;background-clip:border-box;-webkit-background-clip:border-box;-webkit-text-fill-color:currentColor}
+.recess-board .digit-four{color:#c9e2ed;transform:none}
+.recess-board .digit-seven{color:#e8efc5;transform-origin:50% 85%;transform:none}
+
+
+/* A football goal: open front, strong posts, and a hanging net behind. */
+.chalk-goal{right:2.5%;top:46%;width:220px;height:124px;transform:rotate(-3deg)}
+.goal-frame{stroke-width:5.5;stroke:#faf6df;opacity:1}
+.goal-net{stroke-width:1;opacity:.32}
+.goal-support{fill:none;stroke:currentColor;stroke-width:1.6;opacity:.48;stroke-linecap:round;stroke-linejoin:round}
+.goal-ground{fill:none;stroke:currentColor;stroke-width:1.2;opacity:.2;stroke-dasharray:6 8}
+.goal-target{left:47%;top:55%}
+.goal-note{left:34%;top:-21px}
+.recess-board .poster-heading .board-logo{flex-basis:120px;width:120px;height:120px}
+@media(max-width:950px){
+.chalk-goal{right:2%;top:48%;width:180px;height:101px}
+.goal-note{top:-23px}
+.recess-board .poster-heading .board-logo{flex-basis:100px;width:100px;height:100px}
+}
+@media(max-width:650px){
+.chalk-goal{right:4%;top:475px;width:123px;height:69px}
+.goal-note{top:-24px;left:32%}
+.recess-board .poster-heading .board-logo{flex-basis:66px;width:66px;height:66px}
+}

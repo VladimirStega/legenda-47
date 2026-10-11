@@ -1,0 +1,58 @@
+/* Shared school sports: a few objects around the club number. */
+.sports-board .poster-lines{inset:0;top:0;left:0;width:100%;height:100%;opacity:.28}
+.sports-board .break-label{top:193px}
+.sports-board .note-left{top:211px;left:5.5%;font-size:28px}
+.basketball-prop{position:absolute;left:12%;top:270px;width:169px;height:169px;z-index:1;transform:rotate(-16deg);pointer-events:none}
+.basketball-prop img{display:block;width:100%;height:100%;filter:drop-shadow(5px 9px 5px #08281d66);transform-origin:50% 60%}
+.swimming-prop{position:absolute;left:22%;bottom:36px;width:170px;z-index:5;transform:rotate(-14deg);pointer-events:none}
+.swimming-prop img{display:block;width:100%;filter:drop-shadow(1px 3px 2px #08251b55)}
+.team-motto{position:absolute;left:28%;top:526px;margin:0;font:600 31px/1.03 var(--hand);color:#e5edcb;transform:rotate(-5deg);z-index:4}
+.team-motto span{display:block}
+.sports-board .turn-note{right:4.5%;top:43px;width:200px;height:153px;transform:rotate(8deg);z-index:8}
+.sports-board .turn-note>span{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:7px;padding:16px 12px 12px;transform-origin:50% 0}
+.turn-note small{font:700 8px var(--font);letter-spacing:.07em;color:#597393}
+.turn-note strong{font:700 29px/.97 var(--hand);color:#275c9b;text-align:center}
+.turn-note em{font:600 21px var(--hand);color:#577a57;white-space:nowrap}
+.sports-board .turn-note::before{left:calc(50% - 33px)}
+.sports-board .chalk-goal{right:4%;top:394px;width:172px;height:97px}
+.sports-board .goal-note{font-size:24px;top:-18px}
+.sports-board .goal-score{right:8%;top:489px;gap:9px}
+.sports-board .goal-score>b{font-size:37px;min-width:38px}
+.sports-board .goal-score>span{font-size:20px}
+.sports-board .goal-shout{top:351px;right:5%;font-size:43px}
+.sports-board .ball-zone{left:61%;bottom:55px}
+.sports-board .ball-hint{left:-4px;font-size:26px}
+.sports-board .mouse-cue{left:95px;top:57px;width:91px;height:59px}
+.sports-board .board-eraser{right:3%;bottom:35px;width:126px}
+.sports-board .shoe-trail{display:none}
+.sports-board .route-guide{opacity:.25}
+@media(min-width:1250px){.sports-board .basketball-prop{left:15%;width:185px;height:185px}.sports-board .swimming-prop{left:24%;width:185px}.sports-board .chalk-goal{right:9%;width:182px;height:102px}.sports-board .goal-score{right:13%}.sports-board .goal-shout{right:10%}.sports-board .turn-note{right:6%;width:220px;height:161px}}
+@media(max-width:950px){.sports-board .turn-note{right:3%;top:46px;width:164px;height:139px}.turn-note strong{font-size:26px}.turn-note em{font-size:20px}.turn-note small{font-size:7px}.sports-board .note-left{top:221px;font-size:25px}.basketball-prop{left:9%;top:286px;width:141px;height:141px}.team-motto{left:28%;top:503px;font-size:28px}.swimming-prop{left:24%;bottom:35px;width:133px}.sports-board .chalk-goal{right:3%;top:387px;width:145px;height:82px}.sports-board .goal-score{right:7%;top:472px}.sports-board .ball-zone{left:60%;bottom:58px}.sports-board .board-eraser{width:109px;right:3%;bottom:37px}.sports-board .board-eraser>span:last-child{font-size:17px}.sports-board .mouse-cue{left:85px;top:51px;width:79px;height:51px}}
+@media(max-width:650px){.sports-board{height:765px}.sports-board .poster-heading{right:5%;left:6%}.sports-board .turn-note{top:151px;right:7%;width:151px;height:118px}.sports-board .turn-note>span{padding:12px 8px 8px;gap:4px}.turn-note strong{font-size:24px}.turn-note em{font-size:18px}.turn-note small{font-size:7px}.sports-board .note-left{top:185px;left:8%;font-size:24px;max-width:100px;line-height:1.1}.sports-board .break-label{top:277px;left:25%;font-size:7px}.sports-board .giant47{top:300px;left:20%;font-size:clamp(168px,50vw,290px)}.basketball-prop{left:3%;top:329px;width:107px;height:107px}.team-motto{left:16%;top:489px;font-size:25px;line-height:1.1;max-width:70%}.team-motto span{display:inline}.sports-board .chalk-goal{right:5%;top:535px;width:124px;height:70px}.sports-board .goal-note{font-size:21px;top:-17px}.sports-board .goal-score{right:10%;top:606px;gap:6px}.sports-board .goal-score>b{font-size:30px;min-width:31px}.sports-board .goal-score>span{font-size:18px}.sports-board .goal-shout{right:7%;top:493px;font-size:34px}.sports-board .ball-zone{left:28%;bottom:134px;width:64px;height:101px}.sports-board .ball-hint{top:19px;left:-64px;font-size:20px;transform:rotate(-16deg)}.sports-board .pass-count{margin-top:11px}.sports-board .board-eraser{right:4%;bottom:39px;width:97px}.sports-board .board-eraser>span:last-child{font-size:16px}.sports-board .eraser-body{width:66px;height:29px}.sports-board .eraser-body b{left:25px;font-size:17px}.swimming-prop{left:42%;bottom:47px;width:100px}.sports-board .support-photo{bottom:30px}.sports-board .mouse-cue{display:none}}
+@media(min-width:480px) and (max-width:650px){.sports-board .giant47{top:266px;font-size:240px;left:23%}.sports-board .basketball-prop{top:302px;left:8%;width:126px;height:126px}.sports-board .team-motto{top:495px;left:25%;font-size:27px}.sports-board .turn-note{right:8%;width:163px}}
+@media(prefers-reduced-motion:reduce){.basketball-prop img,.turn-note>span{animation:none}}
+@media(min-width:951px){.sports-board .swimming-prop{left:21%;bottom:13px;width:155px}}
+@media(max-width:650px){.sports-board .giant47{font-size:clamp(140px,44vw,248px);left:12%;top:304px}.sports-board .team-motto{left:10%;right:6%;top:489px;max-width:none;font-size:clamp(18px,5.5vw,23px);white-space:nowrap}.sports-board .turn-note{height:127px}}
+@media(min-width:480px) and (max-width:650px){.sports-board .giant47{top:275px}.sports-board .team-motto{left:20%;top:503px}}
+/* A small ball tucked behind the numeral, rolling toward the navigation. */
+.sports-board{overflow:visible}
+.sports-board .poster-lines{opacity:.62}
+.sports-board .basketball-prop{left:34%;top:239px;width:96px;height:96px;z-index:1;transform:none;will-change:transform;visibility:hidden}
+.sports-board .basketball-prop[data-scroll-ready]{visibility:visible}
+.sports-board .basketball-prop img{filter:drop-shadow(3px 5px 3px #08281d55)}
+@media(max-width:950px){.sports-board .basketball-prop{width:80px;height:80px}}
+@media(max-width:650px){.sports-board .basketball-prop{width:60px;height:60px}.sports-board .poster-lines{opacity:.55}}
+@media(prefers-reduced-motion:reduce){.sports-board .basketball-prop{will-change:auto}}
+/* A complete running track, kept behind the club number. */
+.sports-board .poster-lines{opacity:.47}
+.sports-board .swimming-prop{transform:rotate(-6deg)}
+.sports-board .swimming-prop img{filter:none;opacity:.9}
+.sports-board .basketball-prop{z-index:1;transform-origin:50% 50%}
+@media(max-width:650px){.sports-board .poster-lines{top:235px;left:0;width:100%;height:290px;opacity:.44}.sports-board .swimming-prop{width:103px;bottom:45px}}
+/* Slightly larger emblem without shifting the headline. */
+.sports-board .poster-heading .board-logo>img{transform:scale(1.1);transform-origin:center}
+.sports-board .swimming-prop{width:202px;bottom:24px;transform:rotate(-3deg)}
+.sports-board .swimming-prop img{opacity:1}
+@media(min-width:951px){.sports-board .swimming-prop{left:22%;width:215px;bottom:4px}}
+@media(max-width:650px){.sports-board .swimming-prop{left:40%;width:118px;bottom:40px}}
+.sports-board .basketball-prop{will-change:auto;transition:none;animation:none}
