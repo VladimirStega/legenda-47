@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Легенда 47 — здесь играют свои</title><meta name="theme-color" content="#244b3c"><link rel="icon" type="image/webp" href="assets/club-logo-transparent.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="playground.css"><link rel="stylesheet" href="poster.css"><link rel="stylesheet" href="customer.css?v=layout-refined"><link rel="stylesheet" href="recess.css?v=goal-logo"><link rel="stylesheet" href="awards.css?v=real-awards"><link rel="stylesheet" href="sports-board.css?v=pages-ready"><script src="awards.js?v=real-awards" defer></script><script src="customer.js?v=real-awards" defer></script><script src="recess.js?v=rolling-ball" defer></script><script src="basketball-static.js?v=static-ball" defer></script></head>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Легенда 47 — здесь играют свои</title><meta name="theme-color" content="#244b3c"><link rel="icon" type="image/webp" href="assets/club-logo-transparent.webp"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="playground.css"><link rel="stylesheet" href="poster.css"><link rel="stylesheet" href="customer.css?v=layout-refined"><link rel="stylesheet" href="recess.css?v=goal-logo"><link rel="stylesheet" href="awards.css?v=real-awards"><link rel="stylesheet" href="sports-board.css?v=balanced-board"><script src="awards.js?v=real-awards" defer></script><script src="customer.js?v=real-awards" defer></script><script src="recess.js?v=rolling-ball" defer></script><script src="basketball-static.js?v=static-ball" defer></script></head>
 <body><header><a class="header-name" href="playground.html">Школьный спортивный клуб<small>Школа № 47 · Липецк</small></a><a class="compare" href="index.html">Первый вариант</a><span class="concept">ИНТЕРАКТИВНЫЙ МАКЕТ</span></header>
 <main><section class="court poster recess-board sports-board" aria-labelledby="headline">
-<svg class="court-lines poster-lines" viewBox="0 0 1120 680" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+<svg class="court-lines poster-lines" viewBox="0 155 1120 460" preserveAspectRatio="none" aria-hidden="true">
 <defs>
 <filter id="chalk-edge" x="-3%" y="-4%" width="106%" height="108%" color-interpolation-filters="sRGB">
 <feTurbulence type="fractalNoise" baseFrequency=".055 .19" numOctaves="3" seed="47" result="edge"/>
@@ -27,9 +27,45 @@
 <g class="goal-frame" filter="url(#chalk-edge)"><path d="M24 147L24 49Q24 47 27 47L253 47Q256 47 256 50L256 147"/></g>
 </svg><span class="goal-target"></span></div>
 <span class="goal-shout" aria-hidden="true">гооол!</span>
+<div class="strength-doodle board-doodle" aria-hidden="true">
+<svg viewBox="0 0 232 166">
+<defs><g id="strength-lines">
+<!-- Slightly bowed bars and separate strokes, like a quick chalk sketch. -->
+<g transform="rotate(-8 116 57)">
+<path d="M12 59Q110 55 220 58M12 64Q119 61 219 63"/>
+<path d="M47 33Q52 30 58 33L59 86Q54 89 48 86ZM32 42L44 41L44 79Q37 81 32 78ZM171 32Q177 30 184 33L185 85Q180 89 173 85ZM188 41Q195 40 199 43L200 77L189 80Z"/>
+<path d="M27 54L26 69M205 53L206 68M54 38L54 80M178 38L179 80"/>
+</g>
+<g transform="translate(14 96) rotate(12 47 24)">
+<path d="M29 21L62 22M28 28L63 29M12 8L25 6L31 15L29 35L20 42L9 38L6 21ZM64 7L78 9L84 19L81 36L70 42L61 34L60 17Z"/>
+<path d="M14 12L12 31M69 13L67 32M10 37L21 39"/>
+</g>
+<g transform="translate(133 104) rotate(-16 38 21)">
+<path d="M21 17L50 19M21 24L50 26M7 5L19 4L24 13L22 31L12 36L3 29L2 14ZM53 8L64 8L70 18L66 34L56 38L47 30L48 16Z"/>
+<path d="M9 10L8 27M56 14L54 29"/>
+</g>
+</g></defs>
+<use href="#strength-lines" class="doodle-understroke"/>
+<use href="#strength-lines" class="doodle-stroke" filter="url(#chalk-edge)"/>
+</svg>
+</div>
 <button class="board-eraser" type="button" aria-label="Стереть след мяча и обнулить счёт"><span class="eraser-body" aria-hidden="true"><b>47</b></span><span>стереть и заново</span></button>
 <div class="basketball-prop" aria-hidden="true"><img src="assets/basketball.svg" alt=""></div><p class="team-motto"><span>Разные старты.</span> <span>Одна команда.</span></p><div class="giant47" aria-label="Легенда 47"><span class="digit-four">4</span><span class="digit-seven">7</span></div>
 <div class="support-photo"><img src="assets/demo-team-v2.jpg" alt="Демонстрационная фотография школьной команды"><span>свои всегда рядом!</span><small>ФОТО-ПРИМЕР</small></div>
+<div class="chess-doodle board-doodle" aria-hidden="true">
+<svg viewBox="0 0 188 112">
+<defs><g id="chess-lines">
+<!-- A pawn, a knight and a rook; each drawn with its own outline. -->
+<path d="M24 47C13 47 13 31 23 30C35 28 37 45 24 47ZM17 51Q23 54 32 51M20 55Q20 70 12 80L36 81Q28 70 28 56M11 82L8 90Q22 93 41 90L38 83"/>
+<path d="M55 89Q59 74 65 67L71 60L60 60L54 53Q53 50 60 44L72 32L73 22L82 30L91 27Q99 37 100 48Q104 68 91 81L96 87M71 32L80 36M58 51L65 50M89 39Q96 54 89 66"/>
+<path d="M79 43L81 44M56 89L98 89L102 98Q77 101 52 97Z"/>
+<path d="M126 39L126 24L135 25L135 33L143 33L144 23L152 24L152 33L162 32L162 25L169 26L167 43L127 42M130 47L165 48M135 50L135 78Q131 82 128 86L166 86Q159 80 159 50M125 89L121 98Q145 100 172 98L168 90M143 57L149 57L149 67"/>
+<path d="M4 103Q49 102 88 104M109 104L179 103"/>
+</g></defs>
+<use href="#chess-lines" class="doodle-understroke"/>
+<use href="#chess-lines" class="doodle-stroke" filter="url(#chalk-edge)"/>
+</svg>
+</div>
 <span class="poster-note note-left">все в игре!</span><span class="break-label">НАШ СПОРТИВНЫЙ КЛУБ</span><div class="turn-note"><span><small>НАШ ГЛАВНЫЙ СТАРТ</small><strong>Школьные<br>Олимпийские игры</strong><em>летом и зимой</em></span></div>
 <div class="shoe-trail" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
 
