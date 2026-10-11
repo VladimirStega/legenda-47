@@ -7,11 +7,12 @@ const reduced = matchMedia('(prefers-reduced-motion: reduce)');
 const photoTitles = ['Открытие игр — команды с флагами','Встреча на спортивной площадке','Команда с кубком','Футбольный матч','Зажжение олимпийского огня','Награждение участников','Команды на открытии','Олимпийская эстафета'];
 const albums = [
   {title:'Школьные олимпийские игры',video:'https://vk.ru/wall-104609113_14155',photos:photoTitles.map((title,i)=>({src:`assets/gallery/olympics/photo-${String(i+1).padStart(2,'0')}.jpg`,title}))},
-  {title:'Кубок президента школы по спортивным играм в креативных пространствах',video:'https://vk.ru/wall-104609113_8228',photos:['Настольный футбол','Аэрохоккей','Настольный теннис','Флэтбол','Бильярд','Шашки'].map((title,i)=>({src:`assets/gallery/president-cup/photo-${String(i+1).padStart(2,'0')}.jpg`,title}))}
+  {title:'Кубок президента школы по спортивным играм в креативных пространствах',video:'https://vk.ru/wall-104609113_8228',photos:['Настольный футбол','Аэрохоккей','Настольный теннис','Флэтбол','Бильярд','Шашки'].map((title,i)=>({src:`assets/gallery/president-cup/photo-${String(i+1).padStart(2,'0')}.jpg`,title}))},
+  {title:'Городская круглогодичная спартакиада',video:null,photos:['Команда на спартакиаде','Баскетбольная команда','Баскетбол','Легкоатлетический кросс','Команда по плаванию','Итоговая таблица спартакиады'].map((title,i)=>({src: 'assets/gallery/spartakiad/photo-'+String(i+1).padStart(2,'0')+'.jpg',title}))}
 ];
 let activeAlbum = 0, photos = albums[0].photos;
 let trigger = null, galleryIndex = 0, awardIndex = 0;
-const videoLink = (url=albums[activeAlbum].video) => `<a class="video-link" href="${url}" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span> Смотреть видео в VK <span aria-hidden="true">↗</span></a>`;
+const videoLink = (url=albums[activeAlbum].video) => !url ? '' : `<a class="video-link" href="${url}" target="_blank" rel="noopener noreferrer"><span aria-hidden="true">▶</span> Смотреть видео в VK <span aria-hidden="true">↗</span></a>`;
 const photoCard = (i) => `<button class="event-photo" data-photo="${i}" aria-label="Открыть фотографию: ${photos[i].title}"><img src="${photos[i].src}" alt="${photos[i].title}" loading="lazy" decoding="async"></button>`;
 const templates = {
   about: () => '<article class="club-description"><span class="scene-hand">спорт начинается с нас</span><h2 class="scene-title">Легенда №47</h2><p>Школьный спортивный клуб «Легенда №47» — это объединение учащихся, заинтересованных в развитии спорта в школе.</p><p>Участники занимаются организацией спортивных мероприятий в школе и представляют школьную команду на уровне города и региона.</p><p><strong>Ключевое дело клуба</strong> — организация и проведение школьных летних и зимних Олимпийских игр.</p></article>',
