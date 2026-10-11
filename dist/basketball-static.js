@@ -8,7 +8,7 @@
     const boardBox=board.getBoundingClientRect(),digit=four.getBoundingClientRect();
     const size=ball.offsetWidth;
     ball.style.left=(digit.left-boardBox.left-board.clientLeft+digit.width*.57-size/2)+'px';
-    ball.style.top=(digit.top-boardBox.top-board.clientTop+size*.46-size/2)+'px';
+    ball.style.top=(digit.top-boardBox.top-board.clientTop+size*.70-size/2)+'px';
     ball.style.transform='rotate(-16deg)';
     ball.style.zIndex='1';
     ball.dataset.scrollReady='';

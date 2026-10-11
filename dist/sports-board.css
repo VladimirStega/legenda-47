@@ -60,20 +60,20 @@
 /* One shared centre for the stadium and number, with balanced margins at every width. */
 .sports-board{
   container-type:inline-size;
-  --track-top:clamp(225px,18vw,286px);
-  --track-height:clamp(310px,28vw,420px);
+  --track-top:clamp(190px,14vw,210px);
+  --track-height:clamp(330px,29vw,445px);
   --track-centre:calc(var(--track-top) + var(--track-height)/2);
   --team-photo-width:clamp(147px,14cqw,212px);
   height:clamp(700px,56vw,850px);
 }
-.sports-board .poster-lines{left:3%;top:var(--track-top);width:94%;height:var(--track-height);opacity:.47}
+.sports-board .poster-lines{left:1%;top:var(--track-top);width:98%;height:var(--track-height);opacity:.47}
 .sports-board .giant47{
-  left:50%;top:var(--track-centre);font-size:clamp(260px,30cqw,365px);
+  left:50%;top:var(--track-centre);font-size:clamp(230px,27cqw,330px);
   letter-spacing:-.12em;padding-right:.12em;
   transform:translate(-50%,-50%) rotate(-7deg);
 }
 .sports-board .break-label{top:calc(var(--track-top) - 33px);left:32%;font-size:clamp(8px,.8cqw,11px)}
-.sports-board .note-left{top:calc(var(--track-top) + 6px);left:6%;font-size:clamp(25px,2.7cqw,35px)}
+.sports-board .note-left{top:calc(var(--track-top) - 5px);left:6%;font-size:clamp(25px,2.7cqw,35px)}
 .sports-board .poster-heading{right:24%;gap:clamp(18px,2cqw,29px)}
 .sports-board .poster-heading .board-logo{width:clamp(100px,10cqw,142px);height:clamp(100px,10cqw,142px);flex-basis:clamp(100px,10cqw,142px)}
 .sports-board .poster-heading h1{font-size:clamp(21px,3.05cqw,46px)}
@@ -82,9 +82,10 @@
 .sports-board .turn-note em{font-size:clamp(20px,1.9cqw,26px)}
 .sports-board .turn-note small{font-size:clamp(7px,.65cqw,9px)}
 .sports-board .basketball-prop{width:clamp(78px,7.2cqw,108px);height:clamp(78px,7.2cqw,108px)}
-.sports-board .chalk-goal{left:6%;right:auto;top:calc(var(--track-centre) - 66px);width:clamp(132px,14cqw,205px);height:auto;aspect-ratio:320/180}
-.sports-board .goal-score{left:9%;right:auto;top:calc(var(--track-centre) + 61px)}
-.sports-board .goal-shout{left:7%;right:auto;top:calc(var(--track-centre) - 118px)}
+.sports-board .chalk-goal{left:auto;right:15%;top:calc(var(--track-centre) - 40px);width:clamp(104px,11cqw,170px);height:auto;aspect-ratio:320/180}
+.sports-board .goal-score{left:auto;right:17%;top:calc(var(--track-centre) + 65px)}
+.sports-board .goal-shout{left:auto;right:16%;top:calc(var(--track-centre) - 100px)}
+.sports-board .route-guide{opacity:0}
 .sports-board .support-photo{left:4%;bottom:42px;width:var(--team-photo-width)}
 .sports-board .support-photo img{height:auto;aspect-ratio:1.55;object-fit:cover}
 .sports-board .support-photo span{font-size:clamp(19px,1.9cqw,27px)}
@@ -100,18 +101,18 @@
 .board-doodle svg{display:block;width:100%;height:auto;overflow:visible;fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
 .doodle-understroke{stroke-width:2.5;opacity:.2}
 .doodle-stroke{stroke-width:3.2;opacity:.95}
-.strength-doodle{right:5.5%;top:calc(var(--track-centre) - 39px);width:clamp(137px,15cqw,224px);transform:rotate(3deg)}
+.strength-doodle{left:16%;right:auto;top:calc(var(--track-centre) - 42px);width:clamp(80px,9.5cqw,145px);transform:rotate(3deg)}
 .chess-doodle{left:calc(4% + var(--team-photo-width) + 28px);bottom:40px;width:clamp(142px,13cqw,180px);transform:rotate(-5deg)}
 @media(max-width:950px) and (min-width:651px){
-  .sports-board .giant47{font-size:clamp(230px,34cqw,285px)}
+  .sports-board .giant47{font-size:clamp(210px,30cqw,270px)}
   .sports-board .poster-heading{gap:16px}
   .sports-board .team-motto{font-size:26px;bottom:140px}
   .sports-board .ball-zone{left:59%}
 }
 @media(max-width:650px){
-  .sports-board{height:765px;--track-top:285px;--track-height:220px;--team-photo-width:clamp(103px,26cqw,130px)}
-  .sports-board .poster-lines{left:3%;width:94%;top:var(--track-top);height:var(--track-height)}
-  .sports-board .giant47{left:50%;top:var(--track-centre);font-size:clamp(144px,43cqw,248px)}
+  .sports-board{height:795px;--track-top:280px;--track-height:300px;--team-photo-width:clamp(103px,26cqw,130px)}
+  .sports-board .poster-lines{left:1%;width:98%;top:var(--track-top);height:var(--track-height)}
+  .sports-board .giant47{left:50%;top:var(--track-centre);font-size:clamp(128px,38cqw,215px)}
   .sports-board .poster-heading{left:6%;right:5%;gap:12px}
   .sports-board .poster-heading .board-logo{width:66px;height:66px;flex-basis:66px}
   .sports-board .poster-heading h1{font-size:clamp(12px,3.5vw,21px)}
@@ -122,20 +123,21 @@
   .sports-board .note-left{top:187px;left:8%;font-size:24px}
   .sports-board .break-label{top:279px;left:18%;font-size:7px}
   .sports-board .basketball-prop{width:60px;height:60px}
-  .sports-board .chalk-goal{left:6%;top:541px;width:104px;height:auto}
-  .sports-board .goal-score{left:56%;right:auto;top:637px;gap:6px;transform:translateX(-50%) rotate(4deg)}
+  .sports-board .chalk-goal{left:auto;right:27%;top:calc(var(--track-centre) - 84px);width:78px;height:auto}
+  .sports-board .goal-note{font-size:18px;top:-14px}
+  .sports-board .goal-score{left:auto;right:9%;top:657px;gap:6px;transform:rotate(4deg)}
   .sports-board .goal-score>b{font-size:26px;min-width:29px}
   .sports-board .goal-score>span{font-size:17px}
-  .sports-board .goal-shout{left:7%;top:514px;font-size:32px}
-  .strength-doodle{right:5%;top:527px;width:108px}
-  .sports-board .team-motto{left:9%;right:6%;top:490px;bottom:auto;font-size:clamp(18px,5.5cqw,24px)}
+  .sports-board .goal-shout{left:auto;right:22%;top:calc(var(--track-centre) - 112px);font-size:27px}
+  .strength-doodle{left:27%;right:auto;top:calc(var(--track-centre) + 39px);width:62px}
+  .sports-board .team-motto{left:9%;right:6%;top:580px;bottom:auto;font-size:clamp(18px,5.5cqw,24px)}
   .sports-board .team-motto span{display:inline}
   .sports-board .support-photo{left:5%;bottom:31px}
   .sports-board .support-photo span{font-size:16px}
   .chess-doodle{left:calc(5% + var(--team-photo-width) + 15px);bottom:34px;width:clamp(88px,24cqw,118px)}
-  .sports-board .ball-zone{left:47%;bottom:114px;width:64px;height:101px}
+  .sports-board .ball-zone{left:47%;bottom:72px;width:64px;height:101px}
   .sports-board .ball{width:64px;height:64px}
-  .sports-board .ball-hint{top:-27px;left:0;font-size:20px;transform:rotate(-7deg)}
+  .sports-board .ball-hint{top:10px;left:76px;font-size:20px;transform:rotate(-7deg)}
   .sports-board .pass-count{width:130px;margin-left:-33px}
   .sports-board .board-eraser{right:3%;bottom:35px;width:90px}
 }
