@@ -11,6 +11,8 @@ const albums = [
   {title:'Городская круглогодичная спартакиада',video:null,photos:['Команда на спартакиаде','Баскетбольная команда','Баскетбол','Легкоатлетический кросс','Команда по плаванию','Итоговая таблица спартакиады'].map((title,i)=>({src: 'assets/gallery/spartakiad/photo-'+String(i+1).padStart(2,'0')+'.jpg',title}))}
 ,
   {title:'Ежегодный день здоровья «Зимние фантазии»',video:null,photos:Array.from({length:9},(_,i)=>({src:'assets/gallery/winter-fantasies/photo-'+String(i+1).padStart(2,'0')+'.jpg',title:'Зимние фантазии — фотография '+(i+1)}))}
+,
+  {title:'Зимние олимпийские игры',video:'https://vk.ru/wall-104609113_899',photos:Array.from({length:8},(_,i)=>({src:'assets/gallery/winter-olympics/photo-'+String(i+1).padStart(2,'0')+'.jpg',title:'Зимние олимпийские игры — фотография '+(i+1)}))}
 ];
 let activeAlbum = 0, photos = albums[0].photos;
 let trigger = null, galleryIndex = 0, awardIndex = 0;
