@@ -13,6 +13,8 @@ const albums = [
   {title:'Ежегодный день здоровья «Зимние фантазии»',video:null,photos:Array.from({length:9},(_,i)=>({src:'assets/gallery/winter-fantasies/photo-'+String(i+1).padStart(2,'0')+'.jpg',title:'Зимние фантазии — фотография '+(i+1)}))}
 ,
   {title:'Зимние олимпийские игры',video:'https://vk.ru/wall-104609113_899',photos:Array.from({length:8},(_,i)=>({src:'assets/gallery/winter-olympics/photo-'+String(i+1).padStart(2,'0')+'.jpg',title:'Зимние олимпийские игры — фотография '+(i+1)}))}
+,
+  {title:'Ежедневная утренняя зарядка на 4 уроке',video:null,photos:Array.from({length:7},(_,i)=>({src:'assets/gallery/morning-exercise/photo-'+String(i+1).padStart(2,'0')+'.jpg',title:'Ежедневная утренняя зарядка — фотография '+(i+1)}))}
 ];
 let activeAlbum = 0, photos = albums[0].photos;
 let trigger = null, galleryIndex = 0, awardIndex = 0;
