@@ -141,3 +141,9 @@
   .sports-board .pass-count{width:130px;margin-left:-33px}
   .sports-board .board-eraser{right:3%;bottom:35px;width:90px}
 }
+
+/* Keep the cue anchored to the ball itself, not the taller caption container. */
+main{padding-top:16px}
+.sports-board .poster-heading .board-logo{display:block}
+.sports-board .mouse-cue{left:calc(100% + 21px);top:calc(clamp(78px,7.5cqw,106px) * .5)}
+

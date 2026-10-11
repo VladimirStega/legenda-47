@@ -16,7 +16,7 @@ const clubAwards = [
 function awardAsset(award, suffix) { return 'assets/awards/' + award.id + suffix; }
 function awardAlt(award) { return 'Грамота: ' + award.title + ', ' + award.group + ', ' + award.place + ' место'; }
 function renderAwards() {
-  return '<div class="awards-heading"><div><span class="scene-hand">за каждой наградой — общая работа</span><h2 class="scene-title">Наши достижения</h2></div><span class="awards-count">'+clubAwards.length+' наград</span></div>' +
+  return '<div class="awards-heading"><div><span class="scene-hand">за каждой наградой — общая работа</span><h2 class="scene-title">Наши достижения</h2></div></div>' +
     '<p class="awards-intro">Победы команды и личные результаты. Нажмите на грамоту, чтобы рассмотреть её и прочитать подробности.</p>' +
     '<div class="award-grid real-awards">' + clubAwards.map((award,index) =>
       '<button class="award-card real-award" data-award="'+index+'" aria-label="Открыть: '+awardAlt(award)+'">'+
