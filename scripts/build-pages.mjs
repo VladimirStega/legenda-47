@@ -20,6 +20,7 @@ for (const name of files) {
 }
 await cp(join(source, 'assets/awards'), join(output, 'assets/awards'), { recursive: true });
 await cp(join(source, 'assets/gallery'), join(output, 'assets/gallery'), { recursive: true });
+await cp(join(source, 'assets/documents'), join(output, 'assets/documents'), { recursive: true });
 const main = (await readFile(join(source, 'playground.html'), 'utf8'))
   .replace('class="header-name" href="playground.html"', 'class="header-name" href="index.html"');
 await writeFile(join(output, 'index.html'), main);

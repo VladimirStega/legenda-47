@@ -70,3 +70,5 @@ header{min-height:70px;gap:13px;padding:12px 5%}.header-name{font-size:10px}.hea
 .poster-heading h1{font-size:clamp(12px,3.5vw,21px);line-height:1.4}
 .mouse-cue{display:none}
 }
+
+.club-documents{list-style:none;padding:0;margin:28px 0}.club-documents li{border-bottom:1px solid #1a294b33}.club-documents a{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 12px;color:inherit;text-decoration:none}.club-documents a:hover{background:#e7edce}.club-documents a:focus-visible{outline:2px solid #1a294b}.club-documents span{font-size:16px;line-height:1.5}.club-documents small{white-space:nowrap;font-size:12px}@media(max-width:600px){.club-documents a{align-items:flex-start;flex-direction:column;gap:8px}}
