@@ -88,3 +88,10 @@ header{min-height:70px;gap:13px;padding:12px 5%}.header-name{font-size:10px}.hea
 #scene .tradition-photos .event-photo:hover{transform:rotate(0)}
 @media(max-width:600px){#scene .tradition-photos{gap:18px}#scene .tradition-photos .event-photo::before,#scene .tradition-photos .event-photo::after{width:38px;height:17px}}
 #scene .full-day-photos{grid-template-columns:repeat(3,minmax(0,1fr));max-width:1000px;margin:26px 0}.full-day-photos .event-photo img{object-fit:contain;background:#f4f1e7}@media(max-width:650px){#scene .full-day-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+#scene .full-day-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,36%);column-gap:42px;align-items:start}
+.full-day-layout>.scene-hand,.full-day-layout>.scene-title{grid-column:1/-1}
+#scene .full-day-layout .full-day-photos{grid-column:2;grid-row:3;width:100%;max-width:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 20px;margin:18px 0;padding:10px 8px}
+#scene .full-day-photos .event-photo:nth-child(even){transform:rotate(3deg)}
+#scene .full-day-photos .event-photo:nth-child(3n){transform:rotate(-1deg)}
+#scene .full-day-photos .event-photo:hover{transform:rotate(0)}
+@media(max-width:800px){#scene .full-day-layout{display:block}#scene .full-day-layout .full-day-photos{width:min(100%,570px);margin:24px 0}}
