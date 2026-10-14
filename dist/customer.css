@@ -95,3 +95,6 @@ header{min-height:70px;gap:13px;padding:12px 5%}.header-name{font-size:10px}.hea
 #scene .full-day-photos .event-photo:nth-child(3n){transform:rotate(-1deg)}
 #scene .full-day-photos .event-photo:hover{transform:rotate(0)}
 @media(max-width:800px){#scene .full-day-layout{display:block}#scene .full-day-layout .full-day-photos{width:min(100%,570px);margin:24px 0}}
+/* Keep handwritten labels in flow and rotate around their own left edge. */
+#scene .scene-hand{display:block;position:static;width:fit-content;max-width:100%;line-height:1.35;transform:rotate(-3deg);transform-origin:left bottom;margin:0 0 22px;padding-top:8px}
+#scene .scene-hand + .scene-title{margin-top:0}
