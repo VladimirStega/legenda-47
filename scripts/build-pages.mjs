@@ -8,7 +8,7 @@ const output = join(root, '_site');
 const files = [
   'playground.css', 'poster.css', 'customer.css', 'recess.css', 'awards.css',
   'sports-board.css', 'awards.js', 'customer.js', 'recess.js', 'basketball-static.js',
-  'gallery.css',
+  'gallery.css', 'mobile.css',
   'assets/club-logo-transparent.webp', 'assets/football.svg', 'assets/basketball.svg',
   'assets/chalk-grain.svg'
 ];

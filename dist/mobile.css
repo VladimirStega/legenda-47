@@ -1,0 +1,63 @@
+/* Phone and tablet layout, loaded after the desktop artwork. */
+@media(max-width:900px){
+  #scene,#scene article,#scene .full-day-copy{min-width:0}
+  #scene .scene-title,#scene .team-word{overflow-wrap:anywhere;font-size:clamp(24px,4.8vw,38px);line-height:1.3}
+  #scene .club-description p{overflow-wrap:break-word}
+  .section-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .section-nav button{min-width:0;min-height:48px;white-space:normal}
+  .album-top{flex-wrap:wrap;gap:12px}
+  .video-link{white-space:normal;text-align:center;min-height:44px}
+  .club-documents a{overflow-wrap:anywhere}
+}
+@media(max-width:650px){
+  main{padding-top:8px}
+  .sports-board{margin:0 8px;overflow:hidden;border-radius:12px}
+  .sports-board .poster-kicker{font-size:8px;line-height:1.6;max-width:88%}
+  .sports-board .poster-heading{left:5%;right:5%;gap:10px;top:65px}
+  .sports-board .poster-heading .board-logo{width:clamp(44px,14vw,66px);height:clamp(44px,14vw,66px);flex-basis:clamp(44px,14vw,66px)}
+  .sports-board .poster-heading h1{min-width:0;font-size:clamp(11px,3.3vw,21px);white-space:normal;line-height:1.5}
+  .sports-board .turn-note{right:6%;width:clamp(126px,36vw,151px)}
+  .sports-board .note-left{left:6%;font-size:clamp(20px,5.5vw,24px);max-width:30%}
+  .sports-board .team-motto{white-space:normal;font-size:clamp(18px,4.8vw,24px);line-height:1.25}
+  .sports-board .ball-hint{left:50%;top:-32px;transform:translateX(-50%) rotate(-5deg);font-size:20px}
+  .team-bench{padding:24px 18px 28px}
+  .bench-heading{flex-wrap:wrap;gap:10px}
+  .bench-heading>span:first-child{max-width:none}
+  .bench-note{text-align:left;max-width:none;font-size:22px}
+  .section-nav{gap:10px}
+  .section-nav button{font-size:12px;line-height:1.45;padding:12px 10px}
+  .design-stage{margin:0 18px 28px;min-height:0}
+  #scene{min-height:0}
+  .stage-top{gap:12px;line-height:1.5;margin-bottom:22px}
+  #scene .scene-hand{font-size:25px;line-height:1.35;margin-bottom:20px}
+  #scene .scene-title,#scene .team-word{font-size:clamp(23px,6vw,32px);line-height:1.3;letter-spacing:-.04em}
+  #scene .club-description p:not(.demo-note),#scene .scene-intro{font-size:16px;line-height:1.75;margin:16px 0}
+  #scene .full-day-layout{display:block}
+  #scene .tradition-photos,#scene .full-day-layout .full-day-photos{width:100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 18px;padding:16px 8px;margin:20px 0}
+  .event-albums{margin:30px 8px;gap:32px}
+  .album-card h3{font-size:18px;line-height:1.5}
+  .gallery-head{display:block}
+  .image-dialog-controls{display:grid;grid-template-columns:1fr auto 1fr;gap:8px}
+  .image-dialog-controls button{min-height:44px;padding:10px 8px}
+  dialog,.photos-dialog{width:calc(100% - 16px);max-width:none;max-height:calc(100dvh - 24px);border-radius:16px;box-shadow:3px 5px 0 #132a4c55}
+  dialog .panel,.photos-dialog .panel{padding:62px 14px 20px}
+  dialog .close{width:44px;height:44px;top:10px;right:10px}
+  .photos-dialog .panel-photo{max-height:55dvh;margin-top:16px}
+  .photos-dialog .panel-tag{max-width:100%;font-size:10px;line-height:1.5;overflow-wrap:anywhere}
+  .club-documents a{padding:16px 4px;gap:7px;min-height:48px}
+  .club-documents span{font-size:15px;line-height:1.55}
+  footer{padding:0 18px 22px;font-size:11px;overflow-wrap:anywhere}
+}
+@media(pointer:coarse){
+  .album-card:hover,.event-photo:hover{transform:none}
+  .section-nav button:hover{transform:none;box-shadow:3px 3px 0 var(--navy)}
+}
+@media(max-width:650px){
+  .sports-board .ball-hint{top:-16px;font-size:18px}
+  .sports-board .board-eraser{right:5%;width:100px}
+  .sports-board .board-eraser>span:last-child{font-size:14px;white-space:normal;line-height:1.2}
+}
+@media(max-width:900px){
+  .council-heading{overflow-x:clip;overflow-y:visible}
+  .council-heading .scene-button{max-width:100%;white-space:normal}
+}
